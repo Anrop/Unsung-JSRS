@@ -36,7 +36,7 @@ class CfgWeapons
         };
     };
     
-    class uns_ak47_base : Uns_Rifle 
+    class uns_ak47_base : Uns_Rifle762 
     {
         drysound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\dry\akm_dry.ogg", 1.5, 1, 15};
         reloadmagazinesound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\reload\akm_reload.ogg", 2, 1, 35};
