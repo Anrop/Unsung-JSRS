@@ -1,0 +1,10 @@
+{
+  "name": "Anrop Unsung JSRS",
+  "prefix": "anrop_unsung_jsrs",
+  "version": "1.0.0",
+  "author": "Anrop",
+  "files": [
+    "mod.cpp"
+  ],
+  "sigversion": 3
+}
