@@ -27,11 +27,11 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType;
+            class StandardSound: BaseSoundModeType
             {
                 soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_mk14_shot_soundset", "jsrs_mk14_shell_soundset", "jsrs_7x62mm_reflector_1"};
             };
-            class SilencedSound: BaseSoundModeType;
+            class SilencedSound: BaseSoundModeType
             {
                 soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_mk14_shot_silenced_soundset", "jsrs_mk14_shell_soundset", "jsrs_7x62mm_sd_reflector_1"};
             };
@@ -39,11 +39,11 @@ class CfgWeapons
         class FullAuto: Mode_FullAuto
         {
             class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType;
+            class StandardSound: BaseSoundModeType
             {
                 soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_mk14_shot_soundset", "jsrs_mk14_shell_soundset", "jsrs_7x62mm_reflector_1"};
             };
-            class SilencedSound: BaseSoundModeType;
+            class SilencedSound: BaseSoundModeType
             {
                 soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_mk14_shot_silenced_soundset", "jsrs_mk14_shell_soundset", "jsrs_7x62mm_sd_reflector_1"};
             };
