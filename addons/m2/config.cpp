@@ -4,8 +4,8 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.0;
-        requiredAddons[] = {"uns_weap_c", "JSRS_SOUNDMOD_Weapons"};
-        addonRootClass = "uns_weap_c";
+        requiredAddons[] = {"uns_armour_c", "JSRS_SOUNDMOD_Weapons"};
+        addonRootClass = "uns_armour_c";
         author = "Anrop";
         url = "https://www.anrop.se";
     };
@@ -22,7 +22,6 @@ class CfgWeapons
         class FullAuto: uns_MGun_base
         {
             class StandardSound;
-            class SilencedSound;
         };
     };
     
