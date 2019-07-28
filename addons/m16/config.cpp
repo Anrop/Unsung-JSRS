@@ -56,22 +56,22 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_m16a4_shot_soundset", "jsrs_spar_shell_soundset", "jsrs_5x56mm_reflector_1"};
+                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_m16a4_shot_soundset", "jsrs_m16a4_shell_soundset", "jsrs_5x56mm_reflector_1"};
             };
             class SilencedSound: SilencedSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_m16a4_shot_silenced_soundset", "jsrs_spar_shell_soundset", "jsrs_5x56mm_sd_reflector_1"};
+                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_m16a4_shot_silenced_soundset", "jsrs_m16a4_shell_soundset", "jsrs_5x56mm_sd_reflector_1"};
             };
         };
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_m16a4_shot_soundset", "jsrs_spar_shell_soundset", "jsrs_5x56mm_reflector_1"};
+                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_m16a4_shot_soundset", "jsrs_m16a4_shell_soundset", "jsrs_5x56mm_reflector_1"};
             };
             class SilencedSound: SilencedSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_m16a4_shot_silenced_soundset", "jsrs_spar_shell_soundset", "jsrs_5x56mm_sd_reflector_1"};
+                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_m16a4_shot_silenced_soundset", "jsrs_m16a4_shell_soundset", "jsrs_5x56mm_sd_reflector_1"};
             };
         };
     };
