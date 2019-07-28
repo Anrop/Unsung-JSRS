@@ -31,7 +31,7 @@ class CfgWeapons
     
     class uns_rpd_base : Uns_HMG 
     {
-        class FullAuto: Mode_FullAuto
+        class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
