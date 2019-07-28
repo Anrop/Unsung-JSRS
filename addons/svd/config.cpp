@@ -29,7 +29,7 @@ class CfgWeapons
         };
     };
     
-    class uns_svd_base : Uns_Rifle 
+    class uns_svd_base : Uns_Rifle762 
     {
         class Single: Single
         {
