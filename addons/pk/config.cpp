@@ -11,22 +11,25 @@ class CfgPatches {
     };
 };
 
+class Mode_SemiAuto;
+class Mode_FullAuto;
+
 class CfgWeapons 
 {
-    class Uns_Rifle;
+    class Rifle_Base_F;
 
-    class Uns_LMG: Uns_Rifle
+    class Uns_Rifle: Rifle_Base_F
     {
-        class FullAuto;
-    };
-
-    class Uns_HMG: Uns_LMG
-    {
-        class FullAuto: FullAuto
+        class FullAuto: Mode_FullAuto
         {
             class StandardSound;
+            class SilencedSound;
         };
     };
+
+    class Uns_LMG: Uns_Rifle {};
+
+    class Uns_HMG: Uns_LMG {};
     
     class uns_PK_base : Uns_HMG 
     {
