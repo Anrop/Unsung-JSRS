@@ -26,7 +26,7 @@ class CfgWeapons
             class SilencedSound;
         };
 
-        class FullAuto: Mode_SemiAuto
+        class FullAuto: Mode_FullAuto
         {
             class StandardSound;
             class SilencedSound;
