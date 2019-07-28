@@ -25,7 +25,6 @@ class CfgWeapons
         class FullAuto: FullAuto
         {
             class StandardSound;
-            class SilencedSound;
         };
     };
     
@@ -37,7 +36,7 @@ class CfgWeapons
             {
                 soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_pkm_shot_soundset", "jsrs_pkm_shell_soundset", "jsrs_7x62mm_reflector_1"};
             };
-            class SilencedSound: SilencedSound
+            class SilencedSound
             {
                 soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_pkm_shot_silenced_soundset", "jsrs_pkm_shell_soundset", "jsrs_7x62mm_sd_reflector_1"};
             };
