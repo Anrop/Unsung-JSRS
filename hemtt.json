@@ -6,5 +6,8 @@
   "files": [
     "mod.cpp"
   ],
+  "keyname": "anrop_unsung_jsrs",
+  "reuse_private_key": true,
+  "signame": "anrop_unsung_jsrs",
   "sigversion": 3
 }
