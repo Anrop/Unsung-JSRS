@@ -4,6 +4,19 @@ pipeline {
     }
 
     stages {
+        stage('Keys') {
+            steps {
+                withCredentials([
+                    file(credentialsId: 'ANROP_UNSUNG_JSRS_PRIVATE_KEY', variable: 'ANROP_UNSUNG_JSRS_PRIVATE_KEY'),
+                    file(credentialsId: 'ANROP_UNSUNG_JSRS_PUBLIC_KEY', variable: 'ANROP_UNSUNG_JSRS_PUBLIC_KEY')
+                ]) {
+                    bat 'mkdir releases\\keys'
+                    bat 'copy %ANROP_UNSUNG_JSRS_PRIVATE_KEY% releases\\keys'
+                    bat 'copy %ANROP_UNSUNG_JSRS_PUBLIC_KEY% releases\\keys'
+                }
+            }
+        }
+
         stage('Build') {
             steps {
                 bat 'hemtt build --release' 
