@@ -4,7 +4,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.0;
-        requiredAddons[] = {"uns_weap_c", "JSRS_SOUNDMOD_Weapons"};
+        requiredAddons[] = {"uns_weap_c", "jsrs_soundmod_complete_edition"};
         addonRootClass = "uns_weap_c";
         author = "Anrop";
         url = "https://www.anrop.se";
@@ -38,30 +38,30 @@ class CfgWeapons
     
     class uns_ak47_base : Uns_Rifle762 
     {
-        drysound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\dry\akm_dry.ogg", 1.5, 1, 15};
-        reloadmagazinesound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\reload\akm_reload.ogg", 2, 1, 35};
-        changefiremodesound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\noises\akm_firemode.ogg", 1.25, 1, 15};
+        drySound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\akm_dry.ogg", 1.5, 1, 15};
+        reloadMagazineSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\akm_reload.ogg", 2, 1, 35};
+        changeFiremodeSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\noises\akm_firemode.ogg", 1.25, 1, 25};
         
         class Single: Single
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_akm_shot_soundset", "jsrs_akm_shell_soundset", "jsrs_7x62mm_reflector_1"};
+                soundSetShot[] = {"jsrs_akm_shot_soundset", "jsrs_7x62mm_reverb_soundset"};
             };
             class SilencedSound: SilencedSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_akm_shot_silenced_soundset", "jsrs_akm_shell_soundset", "jsrs_7x62mm_sd_reflector_1"};
+                soundSetShot[] = {"jsrs_akm_shot_silenced_soundset", "jsrs_7x62mm_sd_reverb_soundset"};
             };
         };
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_akm_shot_soundset", "jsrs_akm_shell_soundset", "jsrs_7x62mm_reflector_1"};
+                soundSetShot[] = {"jsrs_akm_shot_soundset", "jsrs_7x62mm_reverb_soundset"};
             };
             class SilencedSound: SilencedSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_akm_shot_silenced_soundset", "jsrs_akm_shell_soundset", "jsrs_7x62mm_sd_reflector_1"};
+                soundSetShot[] = {"jsrs_akm_shot_silenced_soundset", "jsrs_7x62mm_sd_reverb_soundset"};
             };
         };
     };

@@ -4,7 +4,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.0;
-        requiredAddons[] = {"uns_weap_c", "JSRS_SOUNDMOD_Weapons"};
+        requiredAddons[] = {"uns_weap_c", "jsrs_soundmod_complete_edition"};
         addonRootClass = "uns_weap_c";
         author = "Anrop";
         url = "https://www.anrop.se";
@@ -29,18 +29,18 @@ class CfgWeapons
     
     class uns_makarov: Uns_Pistol 
     {
-        drysound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\dry\pm9m_dry.ogg", 1.5, 1, 15};
-        reloadmagazinesound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\reload\pm9m_reload.ogg", 2, 1, 35};
+        drySound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\pm9m_dry.ogg", 1.5, 1, 15};
+        reloadMagazineSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\pm9m_reload.ogg", 2, 1, 35};
         
         class Single: Single
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_pistol_shake_soundset", "jsrs_pm9m_shot_soundset", "jsrs_pm9m_shell_soundset", "jsrs_9mm_reflector_1"};
+                soundSetShot[] = {"jsrs_pm9m_shot_soundset", "jsrs_9mm_reverb_soundset"};
             };
             class SilencedSound: SilencedSound
             {
-                soundSetShot[] = {"jsrs_pistol_shake_soundset", "jsrs_pm9m_shot_silenced_soundset", "jsrs_pm9m_shell_soundset", "jsrs_9mm_sd_reflector_1"};
+                soundSetShot[] = {"jsrs_pm9m_shot_silenced_soundset", "jsrs_9mm_sd_reverb_soundset"};
             };
         };
     };
