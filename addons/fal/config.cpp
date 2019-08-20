@@ -4,7 +4,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.0;
-        requiredAddons[] = {"uns_weap_c", "JSRS_SOUNDMOD_Weapons"};
+        requiredAddons[] = {"uns_weap_c", "jsrs_soundmod_complete_edition"};
         addonRootClass = "uns_weap_c";
         author = "Anrop";
         url = "https://www.anrop.se";
@@ -24,22 +24,22 @@ class CfgWeapons
         {
             class StandardSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_fnfal_shot_soundset", "jsrs_fnfal_shell_soundset", "jsrs_7x62mm_reflector_1"};
+                soundSetShot[] = {"jsrs_fnfal_shot_soundset", "jsrs_7x62mm_reverb_soundset"};
             };
             class SilencedSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_fnfal_shot_silenced_soundset", "jsrs_fnfal_shell_soundset", "jsrs_7x62mm_sd_reflector_1"};
+                soundSetShot[] = {"jsrs_fnfal_shot_silenced_soundset", "jsrs_7x62mm_sd_reverb_soundset"};
             };
         };
         class FullAuto: Mode_FullAuto
         {
             class StandardSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_fnfal_shot_soundset", "jsrs_fnfal_shell_soundset", "jsrs_7x62mm_reflector_1"};
+                soundSetShot[] = {"jsrs_fnfal_shot_soundset", "jsrs_7x62mm_reverb_soundset"};
             };
             class SilencedSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_fnfal_shot_silenced_soundset", "jsrs_fnfal_shell_soundset", "jsrs_7x62mm_sd_reflector_1"};
+                soundSetShot[] = {"jsrs_fnfal_shot_silenced_soundset", "jsrs_7x62mm_sd_reverb_soundset"};
             };
         };
     };

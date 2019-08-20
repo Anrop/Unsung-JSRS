@@ -4,7 +4,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.0;
-        requiredAddons[] = {"uns_armour_c", "uns_weap_c", "JSRS_SOUNDMOD_Weapons"};
+        requiredAddons[] = {"uns_armour_c", "uns_weap_c", "jsrs_soundmod_complete_edition"};
         addonRootClass = "uns_weap_c";
         author = "Anrop";
         url = "https://www.anrop.se";
@@ -33,18 +33,18 @@ class CfgWeapons
     
     class uns_m60_base : Uns_HMG 
     {
-        drysound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\dry\navid_dry.ogg", 1.5, 1, 15};
-        reloadmagazinesound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\reload\navid_reload.ogg", 2, 1, 35};
+        drySound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\navid_dry.ogg", 1.5, 1, 15};
+        reloadMagazineSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\navid_reload.ogg", 2, 1, 35};
         
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_m60e4_shot_soundset", "jsrs_spmg_shell_soundset", "jsrs_7x62mm_reflector_1"};
+                soundSetShot[] = {"jsrs_m60e4_shot_soundset", "jsrs_7x62mm_reverb_soundset"};
             };
             class SilencedSound: SilencedSound
             {
-                soundSetShot[] = {"jsrs_rifle_shake_soundset", "jsrs_m60e4_shot_silenced_soundset", "jsrs_spmg_shell_soundset", "jsrs_7x62mm_sd_reflector_1"};
+                soundSetShot[] = {"jsrs_m60e4_shot_silenced_soundset", "jsrs_7x62mm_sd_reverb_soundset"};
             };
         };
     };
@@ -59,14 +59,14 @@ class CfgWeapons
 
     class uns_M60_v : Uns_LMG_v 
     {
-        drysound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\dry\navid_dry.ogg", 1.5, 1, 15};
-        reloadmagazinesound[] = {"\jsrs_soundmod\jsrs_soundmod_snd_weapons\sounds\reload\navid_reload.ogg", 2, 1, 35};
+        drySound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\navid_dry.ogg", 1.5, 1, 15};
+        reloadMagazineSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\navid_reload.ogg", 2, 1, 35};
 
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_m60e4_shot_soundset", "jsrs_spmg_shell_soundset", "jsrs_7x62mm_reflector_1"};
+                soundSetShot[] = {"jsrs_m60e4_shot_soundset", "jsrs_7x62mm_reverb_soundset", "jsrs_gunner_casing"};
             };
         };
     };

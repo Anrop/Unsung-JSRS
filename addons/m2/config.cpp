@@ -4,7 +4,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.0;
-        requiredAddons[] = {"uns_armour_c", "JSRS_SOUNDMOD_Weapons"};
+        requiredAddons[] = {"uns_armour_c", "jsrs_soundmod_complete_edition"};
         addonRootClass = "uns_armour_c";
         author = "Anrop";
         url = "https://www.anrop.se";
@@ -31,7 +31,7 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_m2_shot_soundset", "jsrs_gunner_casing", "jsrs_hmg_reflector_1"};
+                soundSetShot[] = {"jsrs_m2_shot_soundset", "jsrs_hmg_reverb_soundset", "jsrs_gunner_casing"};
             };
         };
     };
