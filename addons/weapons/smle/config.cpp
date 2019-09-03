@@ -1,6 +1,6 @@
 class CfgPatches {
-    class anrop_unsung_jsrs_weapons_mosin {
-        name = "anrop_unsung_jsrs_weapons_mosin";
+    class anrop_unsung_jsrs_weapons_smle {
+        name = "anrop_unsung_jsrs_weapons_smle";
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.0;
@@ -25,7 +25,6 @@ class CfgWeapons
         class Single: Single
         {
             class StandardSound;
-            class SilencedSound;
         };
     };
 
@@ -33,20 +32,13 @@ class CfgWeapons
 
     class uns_Rifle_boltaction_clip_base: uns_Rifle_boltaction_base {};
     
-    class uns_mosin_base : uns_Rifle_boltaction_clip_base 
+    class uns_smle_base : uns_Rifle_boltaction_clip_base 
     {
-        drySound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\m320r_dry.ogg", 1.5, 1, 15};
-        reloadMagazineSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\ebr_reload.ogg", 2, 1, 35};
-        
         class Single: Single
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_mosin_shot_soundset", "jsrs_ww2_bolt_rifle_reverb_soundset"};
-            };
-            class SilencedSound: SilencedSound
-            {
-                soundSetShot[] = {"jsrs_mosin_shot_silenced_soundset", "jsrs_7x62mm_sd_reverb_soundset"};
+                soundSetShot[] = {"jsrs_leeenfield_shot_soundset", "jsrs_ww2_bolt_rifle_reverb_soundset"};
             };
         };
     };
