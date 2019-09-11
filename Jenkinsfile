@@ -35,7 +35,7 @@ pipeline {
             }
 
             steps {
-                publishSteamWorkshop '1817844401', 'releases/1.0.0/@anrop_unsung_jsrs', env.GIT_COMMIT
+                publishSteamWorkshop '1817844401', 'releases/1.0.0/@anrop_unsung_jsrs', "https://github.com/Anrop/Unsung-JSRS/commit/${env.GIT_COMMIT}"
             }
         }
     }
