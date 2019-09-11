@@ -31,7 +31,7 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_m2_shot_soundset", "jsrs_hmg_reverb_soundset", "jsrs_gunner_casing"};
+                soundSetShot[] = {"jsrs_m2_shot_soundset", "jsrs_hmg_reverb_soundset"};
             };
         };
     };

@@ -1,6 +1,6 @@
 class CfgPatches {
-    class anrop_unsung_jsrs_weapons_mosin {
-        name = "anrop_unsung_jsrs_weapons_mosin";
+    class anrop_unsung_jsrs_weapons_kar98 {
+        name = "anrop_unsung_jsrs_weapons_kar98";
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.0;
@@ -25,7 +25,6 @@ class CfgWeapons
         class Single: Single
         {
             class StandardSound;
-            class SilencedSound;
         };
     };
 
@@ -42,11 +41,7 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_mosin_shot_soundset", "jsrs_ww2_bolt_rifle_reverb_soundset"};
-            };
-            class SilencedSound: SilencedSound
-            {
-                soundSetShot[] = {"jsrs_mosin_shot_silenced_soundset", "jsrs_7x62mm_sd_reverb_soundset"};
+                soundSetShot[] = {"jsrs_kar98k_shot_soundset", "jsrs_ww2_bolt_rifle_reverb_soundset"};
             };
         };
     };
