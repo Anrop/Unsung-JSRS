@@ -37,14 +37,14 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_m3a1_shot_soundset", "jsrs_ww2_smg_reverb_soundset"};
+                soundSetShot[] = {"jsrs_thompson_shot_soundset", "jsrs_ww2_smg_reverb_soundset"};
             };
         };
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"jsrs_m3a1_shot_soundset", "jsrs_ww2_smg_reverb_soundset"};
+                soundSetShot[] = {"jsrs_thompson_shot_soundset", "jsrs_ww2_smg_reverb_soundset"};
             };
         };
     };
