@@ -25,7 +25,7 @@ pipeline {
 
         stage('Archive Build') {
             steps {
-                archiveArtifacts artifacts: 'releases/**/*'
+                archiveArtifacts artifacts: 'releases/1.0.0/**/*'
             }
         }
 
