@@ -20,10 +20,6 @@ class CfgWeapons
     
     class uns_M14_base : Uns_Rifle762 
     {
-        drySound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\mk14_dry.ogg", 1.5, 1, 15};
-        reloadMagazineSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\mk14_reload.ogg", 2, 1, 35};
-        changeFiremodeSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\noises\mk14_firemode.ogg", 1.25, 1, 25};
-
         class Single: Mode_SemiAuto
         {
             class BaseSoundModeType;

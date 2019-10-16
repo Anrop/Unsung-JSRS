@@ -35,9 +35,6 @@ class CfgWeapons
     
     class uns_mosin_base : uns_Rifle_boltaction_clip_base 
     {
-        drySound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\m320r_dry.ogg", 1.5, 1, 15};
-        reloadMagazineSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\ebr_reload.ogg", 2, 1, 35};
-        
         class Single: Single
         {
             class StandardSound: StandardSound
