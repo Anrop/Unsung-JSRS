@@ -33,9 +33,6 @@ class CfgWeapons
     
     class uns_m60_base : Uns_HMG 
     {
-        drySound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\navid_dry.ogg", 1.5, 1, 15};
-        reloadMagazineSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\navid_reload.ogg", 2, 1, 35};
-        
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
@@ -59,9 +56,6 @@ class CfgWeapons
 
     class uns_M60_v : Uns_LMG_v 
     {
-        drySound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\navid_dry.ogg", 1.5, 1, 15};
-        reloadMagazineSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\navid_reload.ogg", 2, 1, 35};
-
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound

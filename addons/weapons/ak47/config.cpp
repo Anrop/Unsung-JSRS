@@ -38,10 +38,6 @@ class CfgWeapons
     
     class uns_ak47_base : Uns_Rifle762 
     {
-        drySound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\akm_dry.ogg", 1.5, 1, 15};
-        reloadMagazineSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\akm_reload.ogg", 2, 1, 35};
-        changeFiremodeSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\noises\akm_firemode.ogg", 1.25, 1, 25};
-        
         class Single: Single
         {
             class StandardSound: StandardSound

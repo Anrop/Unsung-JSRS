@@ -29,9 +29,6 @@ class CfgWeapons
     
     class uns_makarov: Uns_Pistol 
     {
-        drySound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\dry\pm9m_dry.ogg", 1.5, 1, 15};
-        reloadMagazineSound[] = {"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\weapons\reload\pm9m_reload.ogg", 2, 1, 35};
-        
         class Single: Single
         {
             class StandardSound: StandardSound
