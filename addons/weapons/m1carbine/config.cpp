@@ -12,6 +12,7 @@ class CfgPatches {
 };
 
 class Mode_SemiAuto;
+class Mode_FullAuto;
 
 class CfgWeapons 
 {
@@ -20,6 +21,7 @@ class CfgWeapons
     class Uns_Rifle: Rifle_Base_F
     {
         class Single;
+        class FullAuto;
     };
 
     class Uns_Rifle762: Uns_Rifle
@@ -28,11 +30,27 @@ class CfgWeapons
         {
             class StandardSound;
         };
+
+        class FullAuto: FullAuto
+        {
+            class StandardSound;
+        };
     };
     
     class uns_m1carbine : Uns_Rifle762 
     {
         class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                soundSetShot[] = {"jsrs_m1carbine_shot_soundset", "jsrs_ww2_carbine_reverb_soundset"};
+            };
+        };
+    };
+
+    class uns_m2carbine: uns_m1carbine
+    {
+        class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
@@ -56,6 +74,14 @@ class CfgWeapons
         class Single: Single
         {
             class StandardSound: StandardSound
+            {
+                soundSetShot[] = {"jsrs_m1carbine_shot_soundset", "jsrs_ww2_carbine_reverb_soundset"};
+            };
+        };
+
+        class FullAuto: Mode_FullAuto
+        {
+            class StandardSound
             {
                 soundSetShot[] = {"jsrs_m1carbine_shot_soundset", "jsrs_ww2_carbine_reverb_soundset"};
             };
